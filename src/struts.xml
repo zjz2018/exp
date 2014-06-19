@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 指定WEB应用的编码集，相当于调用HttpServletRequest.setCharacterEncodint方法，如果使用了velocity或freemarker,它也用于指定输出的编码格式 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!-- 启用国际化配置文件 -->
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+	<!-- 指定请求后缀为.action，指定多个请求后缀用逗号分隔 -->
+	<constant name="struts.action.extension" value="action" />
+	<!-- 允许struts标签直接访问类静态方法/属性 -->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	<!-- 默认的视图主题 -->
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- 开发模式，显示更详细出错信息 -->
+	<constant name="struts.devMode" value="true" />
+	<!--设置浏览器是否缓存静态内容，建议：开发阶段关闭，运行时开启 -->
+	<constant name="struts.serve.static.browserCache" value="false" />
+	
+	<constant name="struts.objectFactory.spring.autoWire.alwaysRespect"
+		value="true" />
+	<!-- 默认所有的都放在WEB-INF/content目录下 可以通过下面的参数来指定其他的路径 <constant name="struts.convention.result.path" 
+		value="/WEB-INF/page" /> -->
+	<constant name="struts.convention.default.parent.package"
+		value="action-default" />
+	<!-- 默认包路径包含action,actions,struts,struts2的所有包都会被struts作为含有Action类的路径来搜索。 
+		你可以通过设置struts.convention.package.locators属性来修改这个配置 -->
+	<!-- 命名空间。从定义的.package.locators标示开始到包结束的部分，就是命名空间。举个例子： Com.ustb.web.user.userAction的命名空间是：”/user”。Com.ustb.web.user.detail.UserAction的命名空间是：”/user/detail” -->
+	<!-- Convention通过如下规则确定URL的具体资源部分:去掉类名的Action部分。然后将将每个分部的首字母转为小写，用’-’分割， 
+		你可以设置struts.convention.action.name.separator 例如： <constant name="struts.convention.action.name.separator" 
+		value="-" /> 对于com.ustb.web.user.detail.UserDetailAction，映射的url就是/WEB-INF/content/user/detail/user-detail.jsp -->
+	<constant name="struts.convention.package.locators" value="web,action" />
+	<constant name="struts.convention.package.locators.basePackage"
+		value="com.example" />
+	<!-- 用于CRUD Action的parent package -->
+	<package name="action-default" extends="convention-default,json-default">
+		<!-- 基于paramsPrepareParamsStack, 增加store interceptor保证actionMessage在redirect后不会丢失 -->
+		<interceptors>
+			<interceptor-stack name="crudStack">
+				<interceptor-ref name="store">
+					<param name="operationMode">AUTOMATIC</param>
+				</interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack" />
+			</interceptor-stack>
+		</interceptors>
+
+		<default-interceptor-ref name="crudStack" />
+	</package>
+
+	<!-- 使用Convention插件,实现约定大于配置的零配置文件风格. 特殊的Result路径在Action类中使用@Result设定. -->
+</struts>    

@@ -1,0 +1,125 @@
+/*
+	分页控件
+*/
+
+/* DBPager 页码输入框 样式 */
+.bbit-dbpager-numberinput
+{
+	height:10px;
+	width:26px;
+	border-style:Groove;
+	border-color:buttonface;
+	border-width:1px;
+	text-align:center;
+	font: 12px Tahoma,Verdana,sans-serif; 		
+	padding-top:0px;
+	_height:14px;
+	 _margin-bottom:5px;
+}
+
+/* DBPager 跳转按钮 样式 */
+.bbit-dbpager-go
+{
+	height:18px;
+	width:22px;
+	POSITION: relative;
+	TOP: 4px ;
+	_height:14px;
+	_top:0px;
+	
+}
+
+/* DBPager 页码选择下拉框 样式 */
+.bbit-dbpager-pagesizeselector
+{
+    margin-top:0px;
+	font: 12px Tahoma,Verdana,sans-serif; 
+}
+
+
+/* DBPager 数字模式时的控件整体 外观*/
+.bbit-dbpager-numbermode
+{
+	padding: 1px;
+	color: gray;
+	font-family: arial;
+	font-size: 11px;
+}
+
+/* DBPager 数字模式时内部链接 样式 */
+.bbit-dbpager-numbermode a
+{ 
+	padding: 1px;
+	color: red;
+	font-family: arial;
+	font-size: 11px;
+ }
+ 
+.bbit-dbpager-numbermode a:link, 
+.bbit-dbpager-numbermode a:visited,
+.bbit-dbpager-numbermode a:active
+{
+	background-color: transparent;
+	text-decoration: none;
+	
+	padding: 1px;
+	color: red;
+	font-family: arial;
+	font-size: 11px;
+}
+
+.bbit-dbpager-numbermode a:hover 
+{
+	text-decoration: none;
+	background-color: #316AC5;
+	border: 1px solid #fff;
+	color:#fff;
+}
+
+/* DBPager 文本模式时内部链接 样式 */
+.bbit-dbpager-textmode
+{
+	padding: 1px;
+	color:black;
+	font-family: arial;
+	font-size: 12px;
+	vertical-align:middle;
+}
+
+.bbit-dbpager-textmode a
+{ 
+	padding: 1px;
+	color: blue;
+	font-family: arial;
+	font-size: 11px;
+ }
+
+.bbit-dbpager-textmode a:link,
+.bbit-dbpager-textmode a:visited,
+.bbit-dbpager-textmode a:active
+{
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.bbit-dbpager-textmode a:hover 
+{
+	text-decoration: none;	
+	
+	color:green;
+}
+
+.bbit-dbpager-textmode .Gray
+{
+    text-decoration: none;	
+    color:Gray;
+}
+
+.bbit-dbpager-textmode .Gray:link,
+.bbit-dbpager-textmode .Gray:visited,
+.bbit-dbpager-textmode .Gray:hover,
+.bbit-dbpager-textmode .Gray:active
+{
+	background-color: transparent;
+	text-decoration: none;
+}

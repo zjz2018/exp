@@ -1,0 +1,54 @@
+@import url("style.css");
+
+.Grid
+{
+	color: #333333;
+	background-color: White;
+	line-height: 24px;
+	width: 100%;
+}
+
+.Grid .Title
+{
+	background-color: #CFD4E2;
+	border-color: White;
+}
+
+.Grid .Title td, th
+{
+	text-align: center;
+	color: #000;
+	border-color: White;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 12px;
+	font-style: normal;
+}
+
+
+.Grid tr
+{
+	background-color: #f3f3f3;
+	border-top-color: White;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-color: White;
+	border-width: 1px;
+}
+
+.Grid td
+{
+	border: solid 1px White;
+}
+
+.Grid .GridMouseOver
+{
+	background-color: #C6D3E2;
+}
+
+.Grid .GridMouseOut
+{
+	background-color: #f3f3f3;
+}
+
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+
+<project name="Demo" default="compile" basedir=".">
+	<property file="build.properties" />
+	<property name="src" value="./src" />
+	<property name="bin" value="./WebRoot/WEB-INF/classes" />
+	<property name="webRoot" value="./WebRoot" />
+	<property name="lib" value="./WebRoot/WEB-INF/lib" />
+	<property name="deploy.directory" value="${app.home}/webapps/${app.name}" />
+
+	<path id="classpath">
+		<fileset dir="${lib}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="init" description="create directory">
+		<mkdir dir="${deploy.directory}" />
+		<mkdir dir="${deploy.directory}/WEB-INF" />
+		<mkdir dir="${deploy.directory}/WEB-INF/classes" />
+		<mkdir dir="${deploy.directory}/WEB-INF/lib" />
+	</target>
+
+	<target name="compile" depends="init" description="Compile Java sources">
+		<javac srcdir="${src}" destdir="${deploy.directory}/WEB-INF/classes" source="1.6" deprecation="on" includes="**/*.java" debug="on" includeantruntime="false">
+			<compilerarg line="-encoding UTF-8 " />
+			<classpath refid="classpath" />
+		</javac>
+	</target>
+
+	<target name="build" depends="clear,init">
+		<copy todir="${deploy.directory}">
+			<fileset dir="${webRoot}" />
+		</copy>
+	</target>
+
+	<target name="jsp" description="rebuild jsp files">
+		<copy todir="${deploy.directory}">
+			<fileset dir="${webRoot}" includes="**/*.jsp" />
+		</copy>
+	</target>
+
+	<target name="config" description="Copy xml and properties">
+		<copy todir="${deploy.directory}">
+			<fileset dir="${webRoot}" includes="**/*.xml,**/*.properties" />
+		</copy>
+	</target>
+
+	<target name="web" description="Copy css and js">
+		<copy todir="${deploy.directory}">
+			<fileset dir="${webRoot}" includes="**/*.css,**/*.js,**/*.jpg,**/*.png,**/*.gif,**/*.JPG" />
+		</copy>
+	</target>
+
+	<target name="clear" description="clean webapp">
+		<delete dir="${deploy.directory}" />
+	</target>
+
+	<target name="archive" depends="build" description="Create binary archive of all files to WAR">
+		<war destfile="${app.name}.war" webxml="${webRoot}/WEB-INF/web.xml">
+			<fileset dir="${webRoot}" excludes="**/application.properties" />
+		</war>
+	</target>
+
+	<target name="jar" depends="init" description="jar">
+		<jar destfile="${app.name}.jar" basedir="${bin}" />
+	</target>
+
+</project>

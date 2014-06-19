@@ -1,0 +1,646 @@
+/* <Global> */
+
+.bccwUpload img,
+.bccwProgressBar img 
+{
+	border: 0px;
+}
+
+.bccwUpload .bccwuUploadRows img 
+{
+	cursor: pointer;	
+}
+
+.bccwUpload,
+.bccwUpload a,
+.bccwUpload input,
+.bccwProgressBar,
+.bccwProgressBar input
+{
+    font: normal 11px "Segoe UI", Arial, sans-serif;
+}
+
+.bccwUpload ul,
+.bccwProgressBar ul
+{
+	margin: 0px;
+    padding: 0px;
+}
+
+.bccwUpload li,
+.bccwProgressBar li
+{
+	list-style: none;
+}
+
+/* </Global> */
+
+/* <UploadedRows> */
+
+.bccwUpload .bccwuUploadedRows
+{
+	vertical-align:middle;		
+}
+
+.bccwUpload .bccwuUploadedRow
+{
+	margin:5px;
+	color: #1a3764;
+}
+
+.bccwUpload .bccwuUploadedRowTitle
+{
+			
+}
+
+.bccwUpload .bccwuUploadedRowDelete 
+{
+	width:16px;
+	height:16px;
+	display: -moz-inline-box;
+	display: inline-block;
+	background-image:url('../images/FileUpload/deleteFile2.gif');
+	background-repeat: no-repeat;
+	margin:0px 1px 0px 1px;
+	cursor:pointer;
+}
+
+.bccwUpload .bccwuUploadedRowSequence
+{
+	width:15px;
+	vertical-align:middle;
+	border:0px;
+	border-bottom: solid 1px #000000;
+	text-align:center;
+}
+
+.bccwUpload .bccwuUploadedRowDownload 
+{
+	width:16px;
+	height:16px;
+	display: -moz-inline-box;
+	display: inline-block;
+	background-image:url('../images/FileUpload/download.gif');
+	background-repeat: no-repeat;
+	margin:0px 3px 0px 3px;
+	cursor:pointer;
+}
+
+/* </UploadedRows> */
+
+/* <Header> */
+
+.bccwUpload .bccwuHeader 
+{
+	margin: 3px 0px 3px 0px;
+}
+
+.bccwUpload .bccwuHeaderAdorner
+{
+	width:16px;
+	height:16px;
+	display: -moz-inline-box;
+	display: inline-block;
+	background-image:url('../images/FileUpload/insertFile.gif');
+	background-repeat: no-repeat;		
+	vertical-align:middle;
+}
+
+.bccwUpload .bccwuHeader a:link 
+{
+	color: #1a3764;
+	text-decoration:underline;
+}
+
+.bccwUpload .bccwuHeader a:visited 
+{
+	color: #1a3764;
+	text-decoration:underline;
+}
+
+.bccwUpload .bccwuHeader a:hover
+{
+	color: #1a3764;
+	text-decoration:underline;
+}
+
+/* </Header> */
+
+/* <Footer> */
+
+.bccwUpload .bccwuFooter
+{
+	margin: 0px;
+	color: #1a3764;
+}
+
+.bccwUpload .bccwuFooter div
+{
+	margin: 3px 0px 3px 0px;
+}
+
+/* </Footer> */
+
+/* <UploadRows> */
+
+.bccwUpload .bccwuUploadRows 
+{
+	vertical-align:middle;	
+}
+
+.bccwUpload .bccwuUploadRow 
+{
+	vertical-align:middle;
+	margin: 8px 0px 8px 0px;	
+	color: #1a3764;
+}
+
+.bccwUpload .bccwuUploadRowSplit
+{
+	height:1px;
+	border-bottom:solid 1px #1a3764;		
+}
+
+.bccwUpload .bccwuFileInputRow 
+{
+	margin: 0px 0px 3px 0px;
+}
+
+.bccwUpload .bccwuFileInput
+{
+	vertical-align: middle;	
+	height:26px;
+}
+
+.bccwUpload .bccwuFileInputDelete 
+{
+	width:13px;
+	height:13px;
+	display: -moz-inline-box;
+	display: inline-block;
+	background-image: url('../images/FileUpload/deleteFile.png');
+	background-repeat:no-repeat;		
+	margin-left:6px;	
+	cursor:pointer;	
+}
+
+.bccwUpload .bccwuTitleInputRow 
+{
+	margin:0px 0px 5px 0px;	
+	vertical-align:middle;
+}
+
+.bccwUpload .bccwuTitleInput 
+{		
+	vertical-align:middle;
+}
+
+.bccwUpload .bccwuImgPreviewButton
+{
+	width:16px;
+	height:16px;
+	display: -moz-inline-box;
+	display: inline-block;
+	background-image: url('../images/FileIcons/JPEG16.GIF');
+	background-repeat:no-repeat;			
+	cursor:pointer;
+}
+
+.bccwUpload .bccwuImgPreview
+{
+	
+}
+
+/* </UploadRows> */
+
+/* <ProgressBar> */
+
+.bccwProgressBar .bccwpProgress
+{
+    border-width: 1px;
+    border-style: solid;
+    background-position: 0 -112px;
+    background-repeat: repeat-x;
+    padding: 10px 0 0;
+}
+
+.bccwProgressBar .bccwpProgress li
+{
+    margin: 0px 18px 10px 16px;
+}
+
+.bccwProgressBar .bccwpProgress li .bccwpCurrentFile
+{
+    font-size: 12px;
+}
+
+.bccwProgressBar .bccwpProgress li.bccwpTimeSpeed
+{
+	margin-bottom: 10px;
+}
+
+.bccwProgressBar .bccwpProgress li.bccwpCurrentFile span
+{
+    font-size: 12px;
+}
+
+.bccwProgressBar .bccwpProgress div
+{
+    margin-bottom: 0.4em;
+}
+
+.bccwProgressBar .bccwpProgress .bccwpBar
+{
+    margin-bottom: 0.4em;
+    border-width: 1px;
+    border-style: solid;
+    background-color: transparent;
+    background-repeat: repeat-x;
+    background-position: 0 -92px;
+	height: 14px;
+	overflow: hidden;
+}
+ 
+.bccwProgressBar .bccwpProgress .bccwpBar div
+{
+    background-color: transparent;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+	height: 15px;
+	margin-top: -1px;
+}
+
+.bccwProgressBar .bccwpProgress .bccwpBar div
+{
+    background-color: transparent;
+    background-repeat: repeat-x;
+    background-position: 0 -17px;
+}
+
+.bccwProgressBar .bccwpProgress
+{
+    border-color: #646f7a;
+    background-color: #fff;
+}
+
+.bccwProgressBar .bccwpProgress li
+{
+    color: #666;
+}
+
+.bccwProgressBar.bccwpProgress li.bccwpCurrentFile
+{
+    color: #222;
+}
+
+.bccwProgressBar .bccwpProgress li.bccwpCurrentFile span
+{
+    color: #06c;
+}
+
+.bccwProgressBar .bccwpProgress .bccwpBar
+{
+    border-color: #b2b2b2 #b2b2b2 #8c8c8c;
+}
+ 
+.bccwProgressBar .bccwpProgress .bccwpBar div
+{
+    background-image: url('../images/FileUpload/progress.gif');
+	border-right: 1px solid #28cc3a;
+}
+
+.bccwProgressBar .bccwpProgress .bccwpBar div
+{
+	border-right: 0;
+	border-left: 1px solid #28cc3a;
+    background-image: url('../images/FileUpload/progress.gif');
+}
+
+/* </ProgressBar> */
+
+/* <TreeView> */
+
+.bccwTreeView
+{
+	white-space:nowrap;
+	cursor: default;
+	color: #000;
+	font: 12px/18px "Segoe UI", Arial, sans-serif;
+}
+
+.bccwTreeView a
+{
+	text-decoration:none;
+	color: #1a3764;
+}
+
+.bccwTreeView .rtTop,
+.bccwTreeView .rtMid,
+.bccwTreeView .rtBot,
+.bccwTreeView .rtUL
+{
+	zoom:1;
+}
+
+.bccwTreeView .rtSp,
+.bccwTreeView .rtImg,
+.bccwTreeView .rtChk
+{
+	vertical-align:middle;
+}
+
+.bccwTreeView .rtText
+{
+	vertical-align:middle;
+	cursor: pointer;
+	margin-left:3px;
+}
+
+.bccwTreeView .rtData
+{
+			
+}
+
+.bccwTreeView .rtUL
+{
+	margin: 0;
+	padding: 0;
+	-moz-user-select: -moz-none;
+}
+
+.bccwTreeView .rtLI
+{
+	list-style-image: none;
+	list-style-position: outside;
+	list-style: none;
+}
+
+.bccwTreeView .rtUL .rtLI .rtUL
+{
+	padding-left: 20px;
+}
+
+.bccwTreeView .rtTop, 
+.bccwTreeView .rtMid, 
+.bccwTreeView .rtBot
+{
+	padding: 0 0 0 20px;
+	margin: 0px;
+}
+
+.bccwTreeView .rtSp
+{
+	display: -moz-inline-box;
+	display: inline-block;
+	width: 1px;
+	height: 22px;
+}
+
+.bccwTreeView .rtChk
+{
+	margin: 0 2px;
+	padding: 0;
+	width: 12px;
+	height: 12px;
+}
+
+/* <expand/collapse images> */
+
+.bccwTreeView .rtPlus, 
+.bccwTreeView .rtMinus
+{
+	font-size: 0;
+	padding: 0;
+	display: -moz-inline-box;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	margin: 6px 7px 0 -18px;
+	width: 11px;
+	height: 11px;
+	background-repeat: no-repeat;
+	background-image: url('../images/TreeView/PlusMinus.png');
+}
+
+* html .bccwTreeView .rtPlus, 
+* html .bccwTreeView .rtMinus { margin-right: 1px; }
+*+html .bccwTreeView .rtPlus, 
+*+html .bccwTreeView .rtMinus { margin-right: 1px; }
+
+.bccwTreeView .rtPlus { background-position: 0 0; }
+.bccwTreeView .rtPlus:hover { background-position: 0 -22px; }
+.bccwTreeView .rtMinus { background-position: 0 -11px; }
+.bccwTreeView .rtMinus:hover { background-position: 0 -33px; }
+
+.bccwTreeView .rtLoadingBefore,
+.bccwTreeView .rtLoadingAfter
+{
+	display: -moz-inline-box;
+	display: inline-block;
+	vertical-align: text-top;
+	width: 21px;
+	height: 17px;
+	overflow: hidden;
+	text-indent: -9999px;
+	font-size: 0;
+	background: url('../images/TreeView/AliasedLoading.gif') no-repeat 2px 0;
+}
+
+.bccwTreeView .rtLoadingMessage 
+{
+	display: -moz-inline-box;
+	display: inline-block;
+	vertical-align:middle;
+	font-size:12px;
+	color:white;
+	background-color:red;
+}
+
+/* </expand/collapse images> */
+
+.bccwTreeView .rtSp
+{
+	display: -moz-inline-box;
+	display: inline-block;
+	width: 1px;
+	height: 22px;
+}
+
+.bccwTreeView .rtChk
+{
+	margin: 0 2px;
+	padding: 0;
+	width: 12px;
+	height: 12px;
+}
+
+/* <node lines> */
+
+.bccwTreeView .rtLines .rtLI,
+.bccwTreeView .rtLines .rtFirst .rtUL
+{
+	background-repeat: repeat-y;
+	background-position: 0 0;
+}
+
+.bccwTreeView .rtLines .rtFirst
+{
+    background-repeat: no-repeat;
+    background-position: 0 1.273em;
+}
+
+.bccwTreeView .rtLines .rtFirst .rtUL
+{
+    background-repeat: repeat-y;
+    background-position: 0 1.273em;
+}
+
+.bccwTreeView .rtLines .rtLast,
+.bccwTreeView .rtLines .rtLast .rtUL
+{
+	background: none;
+}
+
+.bccwTreeView .rtLines .rtTop,
+.bccwTreeView .rtLines .rtMid,
+.bccwTreeView .rtLines .rtBot
+{
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.bccwTreeView .rtLines .rtLI,
+.bccwTreeView .rtLines .rtFirst .rtUL { background-image: url('../images/TreeView/NodeSpan.png'); }
+
+.bccwTreeView .rtLines .rtFirst,
+.bccwTreeView .rtLines .rtFirst .rtUL { background-image: url('../images/TreeView/FirstNodeSpan.png'); }
+.bccwTreeView .rtLines .rtLast,
+.bccwTreeView .rtLines .rtLast .rtUL { background-image: none; }
+
+.bccwTreeView .rtLines .rtTop { background-image:url('../images/TreeView/TopLine.png'); }
+.bccwTreeView .rtLines .rtMid { background-image:url('../images/TreeView/MiddleLine.png'); }
+.bccwTreeView .rtLines .rtBot { background-image:url('../images/TreeView/BottomLine.png'); }
+.bccwTreeView .rtLines .rtLast .rtTop { background-image:url('../images/TreeView/SingleLine.png'); }
+
+/* </node lines> */
+
+/* </TreeView> */
+
+/* <OpenDialogBox> */
+.tableOpenDialogBox
+{
+  height:17px;
+  display:table-cell;
+}
+
+.bccwOpenDialogBox 
+{
+
+}
+
+.bccwOpenDialogBox a
+{
+    margin-top:0px!important;
+    margin-top:3px;
+    float:left;
+}
+
+
+.bccwOpenDialogBox a div
+{
+    padding-top: 0px;
+    margin-right:1px;
+}
+
+
+.bccwOpenDialogBox input
+{
+
+}
+
+.bccwOpenDialogBox .bccwodbTextBox 
+{
+    float:left;
+	margin: 0px 0px 0px 0px;
+}
+
+.bccwOpenDialogBox .bccwodbButton
+{
+    margin:0px!important;
+	margin:3px 0px 3px 0px;
+	text-align:center;
+	width:50px;
+}
+
+.bccwDialogBackgroundMask 
+{	
+	position:absolute;
+	background:#f2f2f4;
+	z-index:999;
+	filter:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=70,finishOpacity=70);
+}
+
+.bccwDialogTemplateContainer
+{
+	position:absolute;
+	white-space:nowrap;
+	z-index:1000;
+	width:100%;
+	top:0px;
+	left:0px;
+}
+
+.bccwDialog
+{
+	background-color:#ffffff;
+	border:solid 1px #343434;
+	width:100%;
+}
+
+.bccwDialog .bccwdToolBar 
+{
+	border-bottom:solid 1px #000000;
+	width:100%;
+	height:22px;
+	vertical-align:middle;
+	background:#a2bcd8;
+	background-image:url('../images/OpenDialogBox/titlebg.png');
+}
+
+.bccwDialog .bccwdCaption
+{
+	padding-left:17px;
+    padding-top:4px;
+	float:left;
+	font-size:13px;
+	color:#000000;
+	background-position:1px 3px;
+	background-image:url('../images/button/16X16/select.png') ;
+	background-repeat:no-repeat;
+}
+
+.bccwDialog .bccwdCloseButton
+{
+	width:30px;
+	height:19px;
+	float:right;
+	cursor:pointer;
+	margin:2px 1px 0px 0px;
+	background-position: -90px 0;
+	background-image:url('../images/OpenDialogBox/commandButtonSprites.gif');
+	display: -moz-inline-box;
+	display: inline-block;
+}
+
+.bccwDialog .bccwdCloseButton:hover
+{
+	background-position: -90px -21px;
+}
+
+.bccwDialog .bccwdContent 
+{	
+	background-color:#FFFFFF;
+	width:100%;	
+}
+
+/* </OpenDialogBox> */

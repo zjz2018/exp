@@ -1,0 +1,67 @@
+
+add.png 新建、新增、添加、新建文件
+addfolder.png 新建目录、新建分类
+edit.png 编辑、修改
+delete.png 删除
+publish.png 发布
+query.png 查询、查找
+detail.png 浏览、查看
+transfer.png 传输、传阅
+restore.png 恢复、还原
+preview.png 预览
+sequence.png 排序
+return.png 返回、退出
+empty.png 清空、全部删除
+select.png 选择
+
+error.png 错误、警告
+refresh.png 刷新
+attach.png 附件
+
+lock.png 锁定
+lockopen.png 解锁
+save.png 保存
+cancel.png 取消
+monitor.png 监控
+statistic.png 统计
+config.png 配置、管理、设置
+verify.png 检测有效性
+color.png 颜色选择
+home.png 返回主页、回首页
+
+html.png 查看html
+tips.png 提示信息
+code.png 查看代码
+copy.png 复制、拷贝
+paste.png 粘贴
+print.png 打印
+
+
+group.png 用户组、角色
+male.png 用户、男
+female.png 女
+dept.png 部门
+
+check.png 审核、审批
+import.png 导入
+export.png 导出
+msgnew.png 新消息、未读消息
+msgviewed.png 已读消息
+rss.png Rss下载、RSS链接
+favorite.png 收藏
+
+folder.png 目录、未打开的目录
+folderopen.png 打开的目录
+file.png 文件
+
+arrow_branch.png 跳转
+arrow_redo.png  回撤
+default.png 默认图标
+
+next.png 下一步
+previous.png 上一步
+
+
+system.png 系统
+function.png  模块、菜单
+Authority.png 权限

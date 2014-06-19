@@ -1,0 +1,28 @@
+/* CSS Document */
+*{margin:0 auto; padding:0;}
+body{margin:0; padding:0; font-size:12px;font-family:"宋体"; background:#94B0C5 url(bg.gif) repeat-x center top;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,
+fieldset,input,p,blockquote,th,td {margin:0; padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {
+font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th {text-align:left;}
+
+
+.font_l {color: #021F6D;font-size:14px;}
+.login_text{ height:20px; font:normal 12px/20px "宋体"; padding-left:2px; border:0px;}
+.STYLE5 {
+	color: #556DA9;
+	font-size: 16px;
+	font-family: "Arial Black";
+}
+.STYLE6 {color: #021F6D; text-decoration:underline;
+         cursor:pointer;
+         }
+.STYLE7 {
+	color: #c9dcf0;
+	font-size: 13px;
+	font-family: "经典中圆简";
+}

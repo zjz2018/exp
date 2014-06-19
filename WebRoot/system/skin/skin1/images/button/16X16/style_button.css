@@ -1,0 +1,580 @@
+.ToolStyle {
+	display: inline-block;
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	height: 100%;
+	top: -1px;
+	padding-top: -1px;
+}
+
+.ToolStyle * {
+	font-style: normal;
+	background-repeat: no-repeat;
+	display: block;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ToolStyle i {
+	background-position: top left;
+	position: absolute;
+	margin-bottom: -5px;
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: 5px;
+}
+
+.ToolStyle span {
+	background-position: bottom left;
+	left: -5px;
+	padding: 0 0 0px 10px;
+}
+
+.ToolStyle b {
+	display: inline-block;
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	border: 0px;
+	margin-top: 3px;
+	margin-right: 4px;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.ToolStyle div {
+	padding-left: 19px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	border: 0px;
+	font-weight: normal;
+	color: Black;
+	background-image: url( '' );
+}
+
+.ToolStyle.blue {
+	background: #2ae;
+}
+
+.ToolStyle.green {
+	background: #9d4;
+}
+
+.ToolStyle.pink {
+	background: #e1a;
+}
+
+.ToolStyle:hover {
+	background-image: url(toolbarbg.png); /*IE7,FF*/
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	text-decoration: none;
+}
+
+.ToolStyle:active {
+	background-color: #444;
+	text-decoration: none;
+}
+
+.ToolStyle[class] {
+	background-position: bottom;
+}
+
+.BtnStyle {
+	display: inline-block;
+	position: relative;
+	padding: 5px;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	background: #eee;
+	width: 0px;
+	border: 0px;
+	overflow: hidden;
+}
+
+.BtnStyle {
+	_color: Black;
+}
+
+.BtnStyle * {
+	font-style: normal;
+	background-image: url(btn2.png); /*IE7,FF*/
+	background-repeat: no-repeat;
+	display: block;
+	_display: inline-block;
+	position: relative;
+}
+
+.BtnStyle * {
+	_display: inline;
+}
+
+.BtnStyle i {
+	background-position: top left;
+	position: absolute;
+	margin-bottom: -5px;
+	top: 0;
+	left: 0;
+	height: 5px;
+	right: 0px;
+	display: inline;
+	width: 100%;
+}
+
+.BtnStyle span {
+	background-position: bottom left;
+	height: 16px;
+	left: -5px;
+	padding: 0 0 5px 10px;
+	margin-bottom: -5px;
+}
+
+.BtnStyle span i {
+	background-position: bottom right;
+	margin-bottom: 0;
+	position: absolute;
+	left: 100%;
+	right: 0px;
+	width: 10px;
+	top: 5px;
+	height: 16px;
+}
+
+.BtnStyle span span {
+	background-position: top right;
+	position: absolute;
+	right: 0px;
+	top: -5px;
+	left: 100%;
+}
+
+.BtnStyle b {
+	float: left;
+	height: 16px;
+	width: 16px;
+	border: 0px;
+	left: -5px;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.BtnStyle div {
+	top: 0px;
+	padding-left: 4px;
+	margin-left: 1px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	border: 0px;
+	font-weight: normal;
+	background-image: url( '' );
+	text-align: center;
+}
+
+.BtnStyle.blue {
+	background: #2ae;
+}
+
+.BtnStyle.green {
+	background: #9d4;
+}
+
+.BtnStyle.pink {
+	background: #e1a;
+}
+
+.BtnStyle:hover {
+	background-color: #829fcb;
+	text-decoration: none;
+}
+
+.BtnStyle:active {
+	background-color: #444;
+	text-decoration: none;
+}
+
+.BtnStyle[class] {
+	background-image: url(shade.png);
+	background-position: bottom;
+}
+
+.buttonDiv {
+	height: 26px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.BtnBar {
+	font-weight: bold;
+	font-size: 12pt;
+	color: #000000;
+	text-align: center;
+	background-color: #F3F3F3;
+	height: 22px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.add {
+	background: url(add.png);
+}
+
+.addfolder {
+	background: url(addfolder.png);
+}
+
+.edit {
+	background: url(edit.png);
+}
+
+.delete {
+	background: url(delete.png);
+}
+
+.query {
+	background: url(query.png);
+}
+
+.detail {
+	background: url(detail.png);
+}
+
+.transfer {
+	background: url(transfer.png);
+}
+
+.restore {
+	background: url(restore.png);
+}
+
+.preview {
+	background: url(preview.png);
+}
+
+.sequence {
+	background: url(sequence.png);
+}
+
+.return {
+	background: url(return.png);
+}
+
+.empty {
+	background: url(empty.png);
+}
+
+/**
+.error {
+	background: url(error.png);
+}*/
+
+.refresh {
+	background: url(refresh.png);
+}
+
+.attach {
+	background: url(attach.png);
+}
+
+.lock {
+	background: url(lock.png);
+}
+
+.lockopen {
+	background: url(lockopen.png);
+}
+
+.save {
+	background: url(save.png);
+}
+
+.cancel {
+	background: url(cancel.png);
+}
+
+.monitor {
+	background: url(monitor.png);
+}
+
+.statistic {
+	background: url(statistic.png);
+}
+
+.config {
+	background: url(config.png);
+}
+
+.verify {
+	background: url(verify.png);
+}
+
+.color {
+	background: url(color.png);
+}
+
+.home {
+	background: url(home.png);
+}
+
+.html {
+	background: url(html.png);
+}
+
+.tips {
+	background: url(tips.png);
+}
+
+.code {
+	background: url(code.png);
+}
+
+.copy {
+	background: url(copy.png);
+}
+
+.paste {
+	background: url(paste.png);
+}
+
+.print {
+	background: url(print.png);
+}
+
+.group {
+	background: url(group.png);
+}
+
+.male {
+	background: url(male.png);
+}
+
+.female {
+	background: url(female.png);
+}
+
+.check {
+	background: url(check.png);
+}
+
+.import {
+	background: url(import.png);
+}
+
+.export {
+	background: url(export.png);
+}
+
+.msgnew {
+	background: url(msgnew.png);
+}
+
+.msgviewed {
+	background: url(msgviewed.png);
+}
+
+.rss {
+	background: url(rss.png);
+}
+
+.favorite {
+	background: url(favorite.png);
+}
+
+.folder {
+	background: url(folder.png);
+}
+
+.arrow {
+	background: url(arrow_branch.png);
+}
+
+.pause {
+	background: url(pause.png);
+}
+
+.folderopen {
+	background: url(folderopen.png);
+}
+
+.file {
+	background: url(file.png);
+}
+
+.redo {
+	background: url(redo.png);
+}
+
+.org {
+	background: url(org.png);
+}
+
+.default {
+	background: url(default.png);
+}
+
+.select {
+	background: url(select.png);
+}
+
+.publish {
+	background: url(publish.png);
+}
+
+.previous {
+	background: url(previous.png);
+}
+
+.next {
+	background: url(next.png);
+}
+
+.system {
+	background: url(system.png);
+}
+
+.function {
+	background: url(function.png);
+}
+
+.Authority {
+	background: url(Authority.png);
+}
+
+.screate {
+	background: url(screate.png);
+}
+
+.dictionary {
+	background: url(dictionary.png);
+}
+
+.hand {
+	cursor: pointer;
+}
+
+input[type="text"],input[type="password"],input[field_type="text"] {
+	background-color: White;
+	background: url(textareaBg.png) repeat-x;
+	height: 17px;
+	border: 1px solid #B4BFDD;
+	vertical-align: middle;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 4px;
+	margin-left: 3px;
+}
+
+DEditGrid {
+	background-color: White;
+	background: url(textareaBg.png) repeat-x;
+	height: 17px;
+	border: 1px solid #B4BFDD;
+	vertical-align: middle;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 4px;
+	margin-left: 3px;
+}
+
+input[class="bbit-dbpager-numberinput"] {
+	background-color: White;
+	background: url(textareaBg.png) repeat-x;
+	height: 16px;
+	border: 1px solid #B4BFDD;
+	margin-top: 1px;
+	margin-bottom: 5px;
+	padding-top: 1px;
+	margin-left: 0px;
+}
+
+.inputDisabled {
+	background: url(textareaDisabledBg.png) repeat-x;
+}
+
+input[type="text"]:hover,input[type="password"]:hover,textarea:hover,select:hover
+	{
+	border: 1px solid #48609c;
+}
+
+select {
+	border-right: #afaeae 1px solid;
+	border-top: #afaeae 1px solid;
+	font-size: 10pt;
+	border-left: #afaeae 1px solid;
+	color: #000;
+	border-bottom: #afaeae 1px solid;
+	font-family: "verdana";
+	margin-left: 3px;
+}
+
+select:hover {
+	padding-left: 3px;
+	font-size: 12px;
+	color: #000000;
+	line-height: 17px;
+	padding-top: 1px;
+	background-color: #ffffff;
+}
+
+input[type="file"] {
+	background-color: White;
+	background: url(textareaBg.png) repeat-x;
+	border: 1px solid #B4BFDD;
+	vertical-align: middle;
+	padding-top: 4px;
+	margin-bottom: 2px;
+	margin-left: 3px;
+	height: 26px;
+	font-size: 12px;
+}
+
+input[type="radio"],input[type="checkbox"] {
+	display: none;
+}
+
+textarea {
+	background-color: White;
+	background: url(textareaBg.png);
+	background-repeat: repeat-x;
+	border: 1px solid #B4BFDD;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 3px;
+}
+
+.CheckBoxStyle {
+	vertical-align: middle;
+	padding-right: 2px;
+	cursor: pointer;
+	margin-left: 3px;
+	width: 16px;
+	height: 16px;
+	border: 0px;
+}
+
+.CheckBoxLabelStyle {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 2px;
+	cursor: pointer;
+	word-spacing: normal;
+	white-space: nowrap;
+}
+
+.InfoTableStyle td {
+	height: 20px;
+	vertical-align: middle;
+}
+
+.DotButton {
+	background: url(DotButton.png);
+	background-repeat: no-repeat;
+	padding-left: 16px;
+	cursor: pointer;
+	padding-top: 2px;
+	text-decoration: blink;
+}
